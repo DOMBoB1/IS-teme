@@ -1,0 +1,84 @@
+VERIFICARE DISPONIBILITATE
+Flux principal:
+
+Se pornește verificarea disponibilității unui vehicul ales, pe baza preferințelor introduse (tip vehicul, oficiu, perioadă).
+
+Sistemul caută în baza de date dacă vehiculul este disponibil în perioada respectivă.
+
+Dacă este disponibil, sistemul îl rezervă temporar.
+
+Se continuă procesul de rezervare, afișând numărul de închiriere.
+
+Flux alternativ – Vehicul indisponibil:
+
+Dacă vehiculul nu este disponibil:
+
+Sistemul afișează un mesaj că acesta nu poate fi rezervat.
+
+Clientul este redirecționat să aleagă alte preferințe.
+
+Excepție – Toate vehiculele indisponibile:
+
+Dacă nu există niciun vehicul disponibil din tipul selectat în oficiul ales pentru perioada dorită, sistemul generează un raport intern.
+
+INIȚIERE ÎNCHIRIERE
+Flux principal:
+
+Clientul se prezintă la oficiu și oferă numărul de închiriere.
+
+Angajatul caută acordul de închiriere în sistem.
+
+Acordul este verificat împreună cu clientul.
+
+Se imprimă și semnează acordul.
+
+Clientul selectează o opțiune de asigurare.
+
+Se imprimă polița de asigurare și se atașează acordului.
+
+Excepții:
+
+Dacă clientul nu are rezervare:
+
+Angajatul introduce preferințele.
+
+Sistemul verifică disponibilitatea.
+
+Dacă există vehicul disponibil, procesul continuă cu afișarea prețului.
+
+Dacă vehiculul rezervat nu este disponibil:
+
+Clientul trebuie să selecteze alte preferințe.
+
+RETURNARE VEHICUL
+Flux principal:
+
+Clientul oferă date despre kilometraj și nivelul combustibilului. Angajatul le introduce în sistem.
+
+Sistemul calculează consumul și costul total al închirierii.
+
+Costul este afișat și verificat de către client.
+
+Clientul plătește, iar angajatul înregistrează plata.
+
+Excepții:
+
+Dacă vehiculul este avariat:
+
+Angajatul înregistrează avaria în sistem.
+
+Se imprimă un formular de constatare, completat și semnat de client.
+
+Dacă clientul contestă costul:
+
+Angajatul înregistrează contestația în sistem.
+
+CREARE RAPOARTE MANAGEMENT
+Flux principal:
+
+Managerul selectează tipul de raport dorit.
+
+Sistemul generează și afișează raportul.
+
+Dacă este necesar, raportul poate fi imprimat.
+
